@@ -9,6 +9,7 @@ A feature-rich To-Do List API built with FastAPI and PostgreSQL, complete with a
 
 ## Table of Contents
 
+- [File Structures](#file-structures)
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -18,6 +19,28 @@ A feature-rich To-Do List API built with FastAPI and PostgreSQL, complete with a
   - [Endpoints](#endpoints)
 - [Contributing](#contributing)
 - [License](#license)
+
+## File Structures
+
+Below is the file structure of this API. 
+
+```
+.
+└── routers
+    ├── __init__.py
+    ├── auth.py
+    ├── todo.py
+    └── users.py
+├── __init__.py
+├── config.py
+├── database.py
+├── main.py
+├── models.py
+├── oauth2.py
+├── schemas.py
+└── utils.py
+
+```
 
 ## Features
 
