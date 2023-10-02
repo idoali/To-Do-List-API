@@ -35,11 +35,46 @@ Before you begin, ensure you have met the following requirements:
 
 - Python 3.9 or higher installed
 - PostgreSQL 13 or higher installed and running
-- pipenv installed (for managing Python dependencies)
+- 
 
 ### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/todo-list-api.git
+   git clone https://github.com/yourusername/to-do-list-api.git
+   ```
+
+2. Navigate to the project directory:
+
+  ```bash
+  cd to-do-list-api
+  ```
+
+3. Install dependencies using pipenv:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Create a PostgreSQL database and configure the database connection in `config.py`
+
+5. Run FastAPI Server
+  ```bash
+  uvicorn main:app --reload
+  ```
+
+# Usage
+
+## Authentication
+To use the API, you must first register and authenticate yourself.
+- Register a new user: POST /user
+- Authenticate: POST /login (Get a JWT token for authentication)
+- Include the token in the Authorization header for protected endpoints.
+
+## Endpoints
+- Create a new task: POST /todos
+- Get a Task by ID: GET /todos/{task_id}
+- Get all tasks: GET /todos/
+- Update Task: PUT /todos/{task_id}
+- Delete Task: DELETE /todos/{task_id}
