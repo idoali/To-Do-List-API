@@ -68,13 +68,13 @@ pip install -r requirements.txt
  
 ## Authentication
 To use the API, you must first register and authenticate yourself.
-- Register a new user: POST /user
-- Authenticate: POST /login (Get a JWT token for authentication)
+- Register a new user: `POST /user`
+- Authenticate: `POST /login` (Get a JWT token for authentication)
 - Include the token in the Authorization header for protected endpoints.
 
 ## Endpoints
-- Create a new task: POST /todos
-- Get a Task by ID: GET /todos/{task_id}
-- Get all tasks: GET /todos/
-- Update Task: PUT /todos/{task_id}
-- Delete Task: DELETE /todos/{task_id}
+- Create a new task: `POST /todos`
+- Get a Task by ID: `GET /todos/{task_id}`
+- Get all tasks: `GET /todos/`
+- Update Task: `PUT /todos/{task_id}`
+- Delete Task: `DELETE /todos/{task_id}`
