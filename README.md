@@ -58,7 +58,7 @@ Before you begin, ensure you have met the following requirements:
 
 - Python 3.9 or higher installed
 - PostgreSQL 13 or higher installed and running
-- 
+- Installed libraries from `requirements.txt`
 
 ### Installation
 
