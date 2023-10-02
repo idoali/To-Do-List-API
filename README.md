@@ -65,7 +65,7 @@ pip install -r requirements.txt
   ```
 
 # Usage
-
+ 
 ## Authentication
 To use the API, you must first register and authenticate yourself.
 - Register a new user: POST /user
